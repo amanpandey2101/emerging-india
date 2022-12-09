@@ -6,7 +6,7 @@ import Navbar from './Widgets/Navbar'
 export default function Home() {
   return (
     <>
-        <div className='home-screen'>
+        {/* <div className='home-screen'>
             <div className='page-first'>
               <Navbar/>
               <Routes>
@@ -14,7 +14,7 @@ export default function Home() {
               </Routes>
                 
             </div>
-        </div>
+        </div> */}
     </>
   )
 }

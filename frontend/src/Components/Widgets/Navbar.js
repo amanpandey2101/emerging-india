@@ -29,7 +29,10 @@ export default function Navbar() {
           <ul className="nav-list">
             <li className="nav-mem relative group cursor-pointer">
               <i className="fa-solid fa-house"></i>
+              <Link to ="/">
+
               Home
+              </Link>
             </li>
             <li className="nav-mem relative group cursor-pointer">
               <i className="fa-solid fa-info"></i>
@@ -40,7 +43,7 @@ export default function Navbar() {
               Gallery
             </li>
           </ul>
-          <div id="dropdownDivider" className="dropdown dropdown-end p-2">
+          <div id="dropdownDivider" className="dropdown dropdown-end p-2 pr-9">
             <label tabIndex={0} className="m-3">
               Dropdown
             </label>
@@ -70,15 +73,12 @@ export default function Navbar() {
                 alt=""
               />
             </label>
-            <ul
-              tabIndex={0}
-              className="dropdown-content menu shadow rounded-box w-52 "
-            >
-              <li>
+            <ul tabIndex={0} className="dropdown-content menu shadow rounded-box w-52 ">
+              <li className="register">
                 <Link to={"/signin"}>Log In</Link>
               </li>
-              <li>
-                <a>Register</a>
+              <li className="register">
+                <Link to = '/register'>Register</Link>
               </li>
             </ul>
           </div>
