@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+.navbar{
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    padding: 1px;
+    position: fixed;
+}
+.navbar-second ul {
+    display: flex;
+    align-self: center;
+    list-style: none;
+}
+.navbar-first{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.navbar-first img{
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+}
+.navbar-second ul{
+    margin-right: 0px;
+}
+.nav-list li{
+    margin-left: 10px;
+     padding: 15px;
+ 
+}
+.nav-list{
+    position: relative;
+}
+.nav-mem::after{
+    margin-right: 5px;
+    content: '';
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: .5s;
+    border-radius: 10px;
+}
+.nav-mem:hover::after{
+    width: 100%;
+}
+.nav-list li i{
+    margin-right: 7px;
+}
+.content-main{
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background-color: #edf5f7;
+}
+.first{
+    height: 100%;
+    width: 100%;
+   background-repeat: no-repeat;
+   background-size: 100% 120%;
+   background-image: url('./Pages/bg.webp');
+  }
+  
+
+
+
