@@ -12,6 +12,7 @@
     width: 100%;
     padding: 1px;
     position: fixed;
+    height: 0%;
 }
 .navbar-second ul {
     display: flex;
@@ -83,4 +84,15 @@
     background-color:rgba(0, 0, 0, 0.349);
     color: white;
     
+}
+.containerbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.image{
+    width: 50rem;
+    height: 54rem;
+    padding: 100px 0px 0px 20px;
+    background-color: white;
 }

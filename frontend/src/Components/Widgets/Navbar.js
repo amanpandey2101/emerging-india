@@ -17,12 +17,12 @@ export default function Navbar() {
   return (
     
     <>
+    <div className="navbar-front">
       <div className="navbar bg-white">
         <div className="navbar-first">
           <img
             src="https://freepngimg.com/thumb/india/3-2-india-flag-free-download-png.png"
-            alt=""
-          />
+            alt=""/>
           <h1>Emerging India</h1>
         </div>
         <div className="navbar-second pr-7">
@@ -83,6 +83,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
