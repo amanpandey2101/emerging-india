@@ -2,42 +2,69 @@ import React from 'react'
 import {Carousel} from "flowbite-react";
 import News from './News';
 import Cards from './Cards';
+import { Link } from 'react-router-dom';
 
 export default function Slider() {
   return (
  <>
-      <div className="max-[500px]:h-[35vh] inline-flex relative mt-24 justify-center align-center w-full h-[70vh] pl-6 pr-6">
-      <Carousel className='absolute bg-slate-600 overflow-y-hidden'>
+      <div className="max-[700px]:h-[50vh] max-[500px]:w-[70vh]  inline-flex relative mt-24 justify-center align-center w-full h-[80vh] pl-6 pr-6">
+      <Carousel className='absolute bg-white overflow-y-hidden'>
       <div>
-      <img className='w-full   ' src={require("../assets/images/unity.avif")} alt="..." />
+      <img className='w-full h-fit  ' src={require("../assets/images/unity.avif")} alt="..." />
       </div>
       <div>
 
-      <img className='w-full   ' src={require("../assets/images/tajmahal.jpg")} alt="..." />
+      <img className='w-full  h-fit ' src={require("../assets/images/tajmahal.jpg")} alt="..." />
       </div>
       <div>
-      <img className='w-full   '  src={require("../assets/images/5G.jpg")} alt="..." />
+      <img className='w-full h-screen '  src={require("../assets/images/5G.jpg")} alt="..." />
       </div>
       <div>
-      <img className='w-full   ' src={require("../assets/images/isro.jpg")} alt="" />
+      <img className='w-full h-screen ' src={require("../assets/images/isro.jpg")} alt="" />
 
       </div>
    </Carousel>
    </div>
 
 
-   <section className="py-6 dark:bg-gray-800">
+   <section className="py-6 dark:bg-gray-800 relative max-[500px]:left-12">
     <h1 className=' font-bold text-4xl'>Dummy Data</h1>
-	<div className="container flex flex-col justify-center p-4 mx-auto ">
+	<div className="container flex flex-col justify-center p-4 mx-auto  ">
 		<div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
-			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?1" alt=""/>
-			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?2" alt=""/>
-			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?3" alt=""/>
-			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?4" alt=""/>
-      <img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?1" alt=""/>
-			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?2" alt=""/> 
-			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?3" alt=""/>
-			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/300x300/?4" alt=""/>
+      <div>
+        <Link to="/heritage">
+			<img className="object-cover w-full cursor-pointer hover:animate-pulse aspect-square h-[40vh] rounded-2xl " src={require("../assets/images/heritage.jpg")} alt=""/>
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle'>Heritage</h1>
+      </Link>
+      </div>
+      <div>
+			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" src={require("../assets/images/culture.jpg")} alt=""/>
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle'>Art</h1>
+      </div>
+      <div>
+			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" src={require("../assets/images/culture (2).jpg")} alt=""/>
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle '>Culture</h1>
+      </div>
+      <div>
+			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" src={require("../assets/images/food.jpg")} alt=""/>
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle '>Food</h1>
+      </div>
+      <div>
+      <img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" src={require("../assets/images/technology.jpg")} alt=""/>
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle '>Technology</h1>
+      </div>
+      <div>
+			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" src={require("../assets/images/tourism.jpg")} alt=""/> 
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle '>Tourism</h1>
+      </div>
+      <div>
+			<img className="object-cover w-full cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" src={require("../assets/images/luxury.jpg")} alt=""/>
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle '>Luxury</h1>
+      </div>
+      <div>
+			<img className="object-cover  cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl w-auto" src={require("../assets/images/sports.jpg")} alt=""/>
+      <h1 className=' font-bold relative bottom-7 rounded-b-2xl text-white text-xl text-center datatitle '>Sports</h1>
+      </div>
 		</div>
 	</div>
 </section>

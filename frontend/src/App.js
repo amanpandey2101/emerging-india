@@ -8,6 +8,7 @@ import Navbar from './Components/Widgets/Navbar';
 import Slider from './Components/Slider';
 import News from './Components/News';
 import Fir from './Components/Fir';
+import Heritage from './Components/Heritage';
 function App() {
   return (
     <div className="App ">
@@ -19,6 +20,7 @@ function App() {
         <Route path='/home' element={<Slider/> }></Route>
         {/* <Route path='/' element={<News/> }></Route> */}
         <Route path='/fir' element={<Fir/>}></Route>
+        <Route path='/heritage' element={<Heritage/>}></Route>
         {/* <Route path='/' element={<News/>}></Route> */}
 
       </Routes>

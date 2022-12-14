@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 1380px;
-    background-color: rgba(79, 79, 79, 0.621);
+    background-color: gray;
     /* padding: 1px; */
     position: fixed;
     height: 0%;
@@ -126,4 +126,9 @@
 
 .indiana-scroll-container--native-scroll {
     overflow: hidden;
+}
+
+.datatitle{
+    background-color: #05050596;
+    
 }

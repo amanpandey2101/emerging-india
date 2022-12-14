@@ -18,6 +18,7 @@ export default function Navbar() {
 
     <>
 
+
       <div className="navbar rounded-md absolute z-10 ">
         <div className="navbar-first">
           <img
@@ -150,8 +151,8 @@ export default function Navbar() {
                 </div>
               </Menu.Items>
             </Transition>
-          </Menu>
-          <div className="dropdown dropdown-end ">
+          </Menu> 
+           <div className="dropdown dropdown-end ">
             <label tabIndex={0} className="m-3">
               <img
                 className="h-8 w-8 rounded-full"
@@ -167,10 +168,13 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
+         </div>
+      </div> 
       
+
     </>
 
   );
 }
+
+
