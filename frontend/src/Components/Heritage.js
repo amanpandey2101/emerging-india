@@ -1,6 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import Heritageslider from './Heritageslider'
+
 export default function Heritage() {
+	
   return (
     <div className=' m-auto pt-20 '>
         <h1 className=' font-bold text-6xl '>Best Heritages Sites to Visit in India</h1>
@@ -78,60 +80,11 @@ export default function Heritage() {
 				<p>An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage.The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque...</p>
 			</div>
 		</a>
-		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			<a rel="noopener noreferrer" href="/" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-				<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src={require("../assets/images/konark.jpg")} alt="" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
-					<p></p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="/" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-				<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?2" alt=""/>
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="/" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
-				<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?3" alt="" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="/" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?4" alt=""/>
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 24, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="/" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?5" alt="" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 25, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="/" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900 hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?6" alt=""/>
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 26, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-		</div>
-		<div className="flex justify-center">
-			<button type="button" className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">Load more posts...</button>
-		</div>
 	</div>
+	<h1 className=' font-serif text-5xl mt-10'>
+		Explore More World Heritage Sites in India
+	</h1>
+		<Heritageslider/>
 </section>
     </div>
   )

@@ -9,6 +9,9 @@ import Slider from './Components/Slider';
 import News from './Components/News';
 import Fir from './Components/Fir';
 import Heritage from './Components/Heritage';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Heritageslider from './Components/Heritageslider';
 function App() {
   return (
     <div className="App ">
@@ -21,6 +24,7 @@ function App() {
         {/* <Route path='/' element={<News/> }></Route> */}
         <Route path='/fir' element={<Fir/>}></Route>
         <Route path='/heritage' element={<Heritage/>}></Route>
+        <Route path='/heritage2' element={<Heritageslider/>}></Route>
         {/* <Route path='/' element={<News/>}></Route> */}
 
       </Routes>

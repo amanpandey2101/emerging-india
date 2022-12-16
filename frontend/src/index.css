@@ -25,18 +25,41 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 1380px;
-    background-color: gray;
+    
+    width: 100%;
+    left: 0;
+    /* background-color: gray; */
     /* padding: 1px; */
     position: fixed;
-    height: 0%;
-    /* background-image: linear-gradient(to right, #e59a4c, #ffa183, #ffb2b6, #ffc9de, #fbe2f7, #e8e9ff, #d2f1ff, #c5f7ff, #72f9f5, #00f8cf, #00f38e, #2be826); */
+    height: 0.8rem;
+    /* background-color: antiquewhite; */
+    transition: width .2s , heigh .5st;
+    background-image: linear-gradient(to right, #e59a4c, #ffa183, #ffb2b6, #ffc9de, #fbe2f7, #e8e9ff, #d2f1ff, #c5f7ff, #72f9f5, #00f8cf, #00f38e, #2be826);
     
+}
+.navbar-scrolled{
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 9vh;
+    margin-top: 10px;
+    border-radius: 1rem;
+    position: fixed;
+    transition: width .2s , heigh .5st;     
+    background-image: linear-gradient(to right, #e59a4c, #ffa183, #ffb2b6, #ffc9de, #fbe2f7, #e8e9ff, #d2f1ff, #c5f7ff, #72f9f5, #00f8cf, #00f38e, #2be826);
+    /* background-color: antiquewhite; */
 }
 .navbar-second ul {
     display: flex;
     align-self: center;
     list-style: none;
+    
+}
+.navbar-second{
+    
+    display: flex;
 }
 .navbar-first{
     display: flex;
@@ -131,4 +154,46 @@
 .datatitle{
     background-color: #05050596;
     
+}
+
+.Slider .slick-next:before {
+    content: '→';
+    color: black;
+    position: relative;
+
+}
+.Slider .slick-prev:before {
+    content: '←';
+    color:black;
+
+}
+.hamburger{
+    display: none;
+}
+
+
+@media (max-width :420px ) {
+    .navbar-second{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        position: fixed;
+        right: 0;
+    }
+    .navbar-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .dropdown-options{
+        display: none;
+    }
+    .navbar-second-visible{
+        display: flex;
+    }
+    .profile-icon{
+        display: none;
+    }
 }

@@ -70,75 +70,7 @@ export default function Slider() {
 </section>
 
 
-   {/* <div class="flex absolute top-[80rem] pl-8 justify-center">
-  <div class="rounded-lg  hover:animate-pulse bg-white mr-4 max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/heritage.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl rounded-lg bg-black relative bottom-8 pb-1 opacity-70 font-serif ">Heritage</h5>
-    </div>
-  </div>
-  <div class="rounded-lg  mr-4 hover:animate-pulse bg-white max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/Art.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl bg-black rounded-lg relative bottom-8 pb-1 opacity-70 font-serif ">Art</h5>
-    </div>
-  </div>
-  <div class="rounded-lg  mr-4 hover:animate-pulse bg-white max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/culture.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl rounded-lg bg-black relative bottom-8 pb-1 opacity-70 font-serif ">Culture</h5>
-    </div>
-  </div>
-  <div class="rounded-lg  mr-4 hover:animate-pulse bg-white max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/food.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl bg-black rounded-lg relative bottom-8 pb-1 opacity-70 font-serif ">Food</h5>
-    </div>
-  </div>
-
-  <div class="flex absolute top-[20rem]  justify-center">
-  <div class="rounded-lg  mr-4 hover:animate-pulse bg-white max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/technology.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl bg-black rounded-lg relative bottom-8 pb-1 opacity-70 font-serif ">Technology</h5>
-    </div>
-  </div>
-  <div class="rounded-lg  mr-4 hover:animate-pulse bg-white max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/heritage.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl bg-black rounded-lg relative bottom-8 pb-1 opacity-70 font-serif ">Tourism</h5>
-    </div>
-  </div>
-  <div class="rounded-lg  mr-4 hover:animate-pulse bg-white max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/heritage.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl bg-black rounded-lg relative bottom-8 pb-1 opacity-70 font-serif ">Luxury</h5>
-    </div>
-  </div>
-  <div class="rounded-lg  mr-4 hover:animate-pulse bg-white max-w-sm ">
-    <a href="!/" data-mdb-ripple="true" data-mdb-ripple-color="light">
-      <img className="rounded-lg" src={require("../assets/images/heritage.jpg")} alt=""/>
-    </a>
-    <div className="">
-      <h5 className="text-white text-xl bg-black rounded-lg relative bottom-8 pb-1 opacity-70 font-serif ">Food</h5>
-    </div>
-  </div>
-</div>
-</div> */}
+   
   </>
 
   )
