@@ -25,15 +25,11 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    
     width: 100%;
     left: 0;
-    /* background-color: gray; */
-    /* padding: 1px; */
     position: fixed;
     height: 0.8rem;
-    /* background-color: antiquewhite; */
-    transition: width .2s , heigh .5st;
+    transition: width .4s , height .5s, border-radius .5s , margin .5s;
     background-image: linear-gradient(to right, #e59a4c, #ffa183, #ffb2b6, #ffc9de, #fbe2f7, #e8e9ff, #d2f1ff, #c5f7ff, #72f9f5, #00f8cf, #00f38e, #2be826);
     
 }
@@ -44,12 +40,17 @@
     justify-content: space-between;
     width: 90%;
     height: 9vh;
+    right: 5%;
     margin-top: 10px;
-    border-radius: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: .8rem;
     position: fixed;
-    transition: width .2s , heigh .5st;     
-    background-image: linear-gradient(to right, #e59a4c, #ffa183, #ffb2b6, #ffc9de, #fbe2f7, #e8e9ff, #d2f1ff, #c5f7ff, #72f9f5, #00f8cf, #00f38e, #2be826);
-    /* background-color: antiquewhite; */
+    transition: width .4s , height .5s, border-radius .8s;     
+    background: rgba(86, 84, 84, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(16, 16, 16, 0.37);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
 }
 .navbar-second ul {
     display: flex;
@@ -172,7 +173,7 @@
 }
 
 
-@media (max-width :420px ) {
+@media (max-width :850px ) {
     .navbar-second{
         display: none;
     }

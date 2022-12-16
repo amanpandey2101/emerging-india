@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Routes,Route,BrowserRouter} from 'react-router-dom'
 import Login from './Pages/Login';
+import DashBoard from './Pages/Dashboard'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path='*' element={<App/>}></Route>
+      <Route path='/dashboard' element={<DashBoard/>}></Route>
       {/* <Route path='/signin' element={<Login/>}></Route> */}
     </Routes>
     </BrowserRouter>
