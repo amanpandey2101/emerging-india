@@ -26,7 +26,6 @@ function App() {
         <Route path='/heritage' element={<Heritage/>}></Route>
         <Route path='/heritage2' element={<Heritageslider/>}></Route>
         {/* <Route path='/' element={<News/>}></Route> */}
-
       </Routes>
      <Home/>
     </div>
