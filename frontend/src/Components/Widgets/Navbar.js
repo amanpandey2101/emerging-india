@@ -24,8 +24,8 @@ export default function Navbar() {
       <div
         className={
           scroll
-            ? "navbar-scrolled p-3  z-10 delay-50"
-            : "navbar z-10 "
+            ? "  navbar-scrolled p-3  z-10 delay-50"
+            : "  navbar z-10 "
         }
       >
         <div className="navbar-first">
