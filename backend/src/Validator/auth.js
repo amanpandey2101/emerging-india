@@ -5,8 +5,8 @@ exports.validateSignupRequest = [
     check('firstName').notEmpty().withMessage('First Name Is Required'),
     check('lastName').notEmpty().withMessage('Last Name Is Required'),
     check('email').isEmail().withMessage('Valid Email is Required'),
-    check('password').isLength({min:6}).withMessage('Minimum 6 Chars Are Required'),
-    check('contactNumber').isLength({min:10,max:10}).withMessage('Enter a valid Phone Number')
+    check('password').isLength({min:6}).withMessage('Password Must Contailn Min. 6 Chars'),
+    check('contactNumber').isMobilePhone().withMessage('Enter a valid Phone Number')
 ];
 
 exports.validateSigninRequest = [
@@ -20,6 +20,6 @@ exports.validateSigninRequest = [
 exports.isRequestValidated = (req,res,next)=>{
     const error = validationResult(req);
     if(error.array().length > 0){
-        return res.status(400).json({message:'Form Validation Error',error:error.array()[0].msg})
+        return res.status(201).json({code:"0",error:error.array()[0].msg})
     } else next();
 }
