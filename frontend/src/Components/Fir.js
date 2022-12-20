@@ -10,9 +10,9 @@ export default function Fir() {
 
         <div className="inline bg-gray-50 dark:bg-gray-900  ">
 
-          <div className="flex flex-col items-center mb-8  justify-center px-6 py-8 mx-auto  lg:py-0">
+          <div className="flex flex-col items-center mb-8  justify-center px-6 py-5 mx-auto  lg:py-0 ">
             <a href="/" className="flex items-center pt-20 pt- mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-              <img className="w-18 h-12 relative right-7" src="https://cdn.iconscout.com/icon/free/png-128/police-officer-2309892-1943802.png" alt="" />
+              <img className="w-22 h-16 relative right-5" src={require("../assets/images/government-of-india.jpg")} alt="" />
               Lodge an FIR
             </a>
             <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
