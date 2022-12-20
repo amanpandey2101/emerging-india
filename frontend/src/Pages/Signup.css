@@ -34,7 +34,7 @@
   transition: all .5s ease-in-out;
   position: fixed;
   margin-top: 8%;
-  translate: -110%;
+  translate: -180%;
 }
 .second-div {
   translate: 10%;

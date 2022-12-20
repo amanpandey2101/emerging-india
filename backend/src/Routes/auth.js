@@ -5,8 +5,11 @@ const { validateSignupRequest, isRequestValidated, validateSigninRequest } = req
 
 const router = express.Router();
 
-router.post("/signup",validateSignupRequest,isRequestValidated,signup
-)
+
+router.post("/validatesignup",validateSignupRequest,isRequestValidated,(req,res)=>{
+    res.status(201).json({code:1,message:"Validated"})
+});
+router.post("/signup",signup)
 router.post("/signin",validateSigninRequest,isRequestValidated,signin);
 
 

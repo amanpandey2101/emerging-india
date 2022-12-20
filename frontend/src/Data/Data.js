@@ -46,10 +46,12 @@ import {
       barValue:70,
       value:"25,970",
       png:UilUsdSquare,
-      series:{
-        name: "Sales",
-        data: [31, 40, 28, 51, 42, 109, 100],
-      }
+      series: [
+        {
+          name: "Revenue",
+          data: [10, 100, 50, 70, 80, 30, 40],
+        },
+      ],
     },
     {
       title: "Revenue",

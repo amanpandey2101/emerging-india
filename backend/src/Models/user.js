@@ -31,7 +31,8 @@ const userSchema = mongoose.Schema({
         required:true,
         unique:true,
         lowercase:true,
-        trim:true
+        trim:true,
+        sparse:true
     },
     hash_password:{
         type:String,
@@ -67,4 +68,4 @@ userSchema.methods = {
 }
 
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Usersss', userSchema);
