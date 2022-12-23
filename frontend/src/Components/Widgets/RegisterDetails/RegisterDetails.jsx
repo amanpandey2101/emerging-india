@@ -9,10 +9,11 @@ import {
 import axios from "axios";
 import app from "../../../firebase_config";
 
+
 const auth = getAuth(app);
 export default class RegisterDetails extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isLoading: false,
       confirmPassword: "",
@@ -31,48 +32,46 @@ export default class RegisterDetails extends Component {
     const api = axios.create({
       baseURL: `http://localhost:3000/api/validatesignup`,
     });
-    
-    
 
     if (this.props.password != this.state.confirmPassword) {
-      alert(`Passwords Doesn't Match`)
+      alert(`Passwords Doesn't Match`);
     } else if (this.props.firstName == "") {
-      alert("First Name Is Required")
+      alert("First Name Is Required");
     } else if (this.props.lastName == "") {
-      alert("Last Name Is Required")
-    }
-    else if (this.props.email == "") {
-      alert("Enter a Valid Email")
+      alert("Last Name Is Required");
+    } else if (this.props.email == "") {
+      alert("Enter a Valid Email");
     } else if (this.props.contactNumber == "") {
-      alert("Enter a Valid Contact Number")
-    }
-    else if (this.props.password == "") {
-      alert(`Passwords Should Not Be Empty`)
+      alert("Enter a Valid Contact Number");
+    } else if (this.props.password == "") {
+      alert(`Passwords Should Not Be Empty`);
     } else {
       api.post("", user).then((res) => {
         console.log(res.data.error);
-        
-        if(res.data.code == 0){
+        if (res.data.code == 0) {
           alert(res.data.error);
-        } else{
+        } else {
           console.log(res.data.code);
           this.setState({
-            isLoading: true
+            isLoading: true,
           });
-          this.onSignUpSubmit()
+          this.onSignUpSubmit();
         }
       });
-      
     }
   }
   onCaptchaVerify() {
-    window.recaptchaVerifier = new RecaptchaVerifier("sign-in-button", {
-      'size': 'invisible',
-      'callback': (response) => {
-        this.onSignUpSubmit();
-        console.log(this.props.sendOTP);
-      }
-    }, auth);
+    window.recaptchaVerifier = new RecaptchaVerifier(
+      "sign-in-button",
+      {
+        size: "invisible",
+        callback: (response) => {
+          this.onSignUpSubmit();
+          console.log(this.props.sendOTP);
+        },
+      },
+      auth
+    );
   }
   onSignUpSubmit() {
     this.onCaptchaVerify();
@@ -83,27 +82,30 @@ export default class RegisterDetails extends Component {
         window.confirmationResult = confirmationResult;
         alert("OTP Sent");
         this.props.sendOTP();
-      }).catch((error) => {
-        if(error){
-
+      })
+      .catch((error) => {
+        if (error) {
+          
         }
       });
   }
 
   render() {
-    const { isLoading, confirmPassword } = this.state
+    const { isLoading, confirmPassword } = this.state;
     return (
       <div className="flex bg-white p-5 rounded-2xl  shadow-md">
         <div className="Card flex flex-col left-5">
           <div className="flex w-full justify-center items-strech align-middle items-center">
-            <img className="w-10 p-1" src={Logo} alt=''/>
+            <img className="w-10 p-1" src={Logo} alt="" />
             <b className="pl-7">Get Started</b>
           </div>
           <form className="space-y-4 p-3" action="#">
             <div>
               <input
                 type="text"
-                onChange={(e) => { this.props.setFname(e.target.value) }}
+                onChange={(e) => {
+                  this.props.setFname(e.target.value);
+                }}
                 name="first-name"
                 id="first-name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
@@ -111,13 +113,18 @@ export default class RegisterDetails extends Component {
                 required="true"
               />
             </div>
-            <div id="sign-in-button" className={this.props.sendOTP ? "none" : ""}></div>
+            <div
+              id="sign-in-button"
+              className={this.props.sendOTP ? "none" : ""}
+            ></div>
 
             <div>
               <input
                 type="text"
                 name="last-name"
-                onChange={(e) => { this.props.setLname(e.target.value) }}
+                onChange={(e) => {
+                  this.props.setLname(e.target.value);
+                }}
                 id="last-name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                 placeholder="Last Name"
@@ -128,7 +135,9 @@ export default class RegisterDetails extends Component {
               <input
                 type="email"
                 name="email"
-                onChange={(e) => { this.props.setEmail(e.target.value) }}
+                onChange={(e) => {
+                  this.props.setEmail(e.target.value);
+                }}
                 id="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                 placeholder="name@company.com"
@@ -141,7 +150,9 @@ export default class RegisterDetails extends Component {
                 name="phone"
                 max={10}
                 min={10}
-                onChange={(e) => { this.props.setPnumber(e.target.value) }}
+                onChange={(e) => {
+                  this.props.setPnumber(e.target.value);
+                }}
                 id="phone"
                 placeholder="Phone Number"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
@@ -152,7 +163,9 @@ export default class RegisterDetails extends Component {
               <input
                 type="password"
                 name="password"
-                onChange={(e) => { this.props.setPassword(e.target.value) }}
+                onChange={(e) => {
+                  this.props.setPassword(e.target.value);
+                }}
                 id="password"
                 placeholder="Password"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
@@ -166,13 +179,13 @@ export default class RegisterDetails extends Component {
                 id="confirm-password"
                 onChange={(e) => {
                   this.setState({ confirmPassword: e.target.value });
-
                 }}
                 placeholder="Confirm Password"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                 required=""
               />
             </div>
+            
           </form>
           <button
             type=""
@@ -180,6 +193,7 @@ export default class RegisterDetails extends Component {
               this.submit();
               // sendOTP();
               // this.onSignUpSubmit();
+              
             }}
             className="sign-in-button flex w-full gap-2 justify-center transition-all delay-150 text-blue-700 bg-blue-100 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
           >
@@ -215,5 +229,4 @@ export default class RegisterDetails extends Component {
       </div>
     );
   }
-};
-
+}

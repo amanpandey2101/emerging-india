@@ -7,6 +7,7 @@ import { Otp } from "../Components/Widgets/RegisterDetails/Otp";
 import { StepProgressBar } from "../Components/Widgets/StepProgressBar/StepProgressBar";
 import { RegInfo } from "../Components/Widgets/RegisterDetails/RegInfo";
 import axios from "axios";
+import Login2 from "../Components/Login2";
 
 export default function Signup() {
   const [index, setIndex] = useState(1);
@@ -17,7 +18,8 @@ export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [otpSent, setOtpSent] = useState(false);
-  
+  const [response,setResponse] = useState("");
+  const [resCode , setResCode] = useState(0);
   const sendOtp = () => {
     setOtpSent(true);
     next();
@@ -29,6 +31,7 @@ export default function Signup() {
     contactNumber: "9507046486",
     email: "anan7272@gmail.com",
     password: "12345678",
+    
   };
   const customConfig = {
     headers: {
@@ -63,6 +66,19 @@ export default function Signup() {
             contactNumber={pNumber}
             email={email}
           />
+          {/* <Login2
+          sendOTP={sendOtp}
+          setFname={setFname}
+          setLname={setLname}
+          setPnumber={setPnumber}
+          setEmail={setEmail}
+          setPassword={setPassword}
+          password={password}
+          firstName={fName}
+          lastName={lName}
+          contactNumber={pNumber}
+          email={email}
+          /> */}
         </div>
         <div className={otpSent ? "flex second-div" : "flex second-div-hidden"}>
           <Otp
@@ -73,12 +89,15 @@ export default function Signup() {
             pNumber={pNumber}
             email={email}
             password={password}
+            next = {next}
+            setResCode = {setResCode}
+            setResponse = {setResponse}
           />
         </div>
       </div>
-      <div className="second-p ">
-        <StepProgressBar step={index} />
-        <RegInfo index={index} />
+      <div className="second-p">
+        <StepProgressBar step={index}/>
+        <RegInfo index={index} pNumber={pNumber} response = {response} resCode = {resCode} />
       </div>
     </div>
   );
