@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}",'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+
+       'roboto':['Roboto Slab', 'serif'],
+       'kanit':['Kanit', 'sans-serif'],
+       'courgette':['Courgette', 'cursive'],
+      }
+    },
   },
   daisyui: {
     themes: false,

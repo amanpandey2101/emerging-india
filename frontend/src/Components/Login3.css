@@ -1,0 +1,117 @@
+
+.mainbox2{
+    width: 400px;
+    height: 650px;
+    background: red;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    background:url("../assets/images/gradient2.jpg");
+    
+
+}
+#abc2{
+    display: none;
+
+}
+.signup2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-180px);
+
+}
+.signup2 label{
+    color:white;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.signup2 input{
+    width: 60%;
+    height: 20%;
+    background:#e0dede ;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+}
+.signup2 button,
+.login3 button{
+    width:60%;
+    height: 40px;
+    margin:2px auto;
+    justify-content: center;
+    display: block;
+    color: white;
+    background: #ff3c78;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border:none;
+    border-radius:5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+
+}
+.signup2 button:hover,
+.login3 button:hover{
+    background: red;
+}
+.login3{
+    height:750px;
+    background:url("../assets/images/gradient6.jpg");
+    /* background: white; */
+    border-radius: 60% / 10%;
+    
+    transition: .8s ease-in-out ;
+
+     
+}
+.signup2 label{
+    color:white;
+    transform: scale(.6);
+
+}
+.login3 label{
+    color:white;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+#abc2:checked ~ .signup2{
+    transform: translateY(-600px);
+
+}
+.login3 input{
+    width: 60%;
+    height: 5%;
+    background:#e0dede ;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+}
+#abc2:checked ~ .login3 label{
+    transform: scale(0.6);
+
+}
+#abc2:checked ~ .signup2 label{
+    transform: scale(1);
+
+}
