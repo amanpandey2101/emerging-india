@@ -4,7 +4,8 @@ const jwt = require("jsonwebtoken");
 exports.signup = (req, res) => {
   User.findOne({ email: req.body.email }).exec((error, user) => {
     if (user) {
-      res.status(400).json({ error: "User Already Exist" });
+      res.status(201).json({ message: "User Already Exist",
+    code:0 });
       
     } else{
     const { firstName, lastName, email, password, contactNumber } = req.body;
@@ -18,12 +19,13 @@ exports.signup = (req, res) => {
     });
     _user.save((error, data) => {
       if (error) {
-        res.status(400).json({ error: "Something went wrong" });
+        console.log(error);
+        res.status(400).json({ error });
         
       }
       if (data) {
-        res.status(201).json({ data });
-        
+        res.status(201).json({ message:"User Registered Successfully",code:1 });
+        console.log(data);
       }
     });
   }
