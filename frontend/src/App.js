@@ -6,12 +6,10 @@ import Login from './Pages/Login';
 import Signup from "./Pages/Signup"
 import Navbar from './Components/Widgets/Navbar';
 import Slider from './Components/Slider';
-import Fir from './Components/Fir';
 import Heritage from './Components/Heritage';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Infrastructure from "./Components/Infrastructure";
-import Login2 from "./Components/Login2";
 import Technology from "./Components/Technology";
 import Arts from "./Components/Arts/Arts";
 import Paintings from "./Components/Arts/Paintings";
@@ -23,16 +21,14 @@ import Cloud from './Components/Technology/Cloud';
 import About from './Components/Widgets/About';
 
 
+
 function App() {
 
   return (
     <div className= "App">
       <Navbar/>
       <Routes>
-         <Route path='/signin' element={<Login/>}></Route>
-
-        {/* <Route path='/signin' element={<Login2/>}></Route> */}
-
+        <Route path='/signin' element={<Login/>}></Route>
         <Route path='/register' element={<Signup/>}></Route>
         <Route path='/' element={<Slider/> }></Route>
         <Route path='/home' element={<Slider/> }></Route>

@@ -1,5 +1,6 @@
 import { React, Component } from "react";
 import { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 import Logo from "../images/ashokStambh.png";
 import {
   getAuth,
@@ -43,7 +44,7 @@ export default class RegisterDetails extends Component {
       alert("Enter a Valid Email");
     } else if (this.props.contactNumber == "") {
       alert("Enter a Valid Contact Number");
-    } else if (this.props.password === "") {
+    } else if (this.props.password == "") {
       alert(`Passwords Should Not Be Empty`);
     } else {
       api.post("", user).then((res) => {
@@ -195,13 +196,13 @@ export default class RegisterDetails extends Component {
               // this.onSignUpSubmit();
               
             }}
-            className="sign-in-button flex w-full gap-2 justify-center transition-all delay-150 text-blue-700 bg-blue-100 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            className="mb-5 sign-in-button flex w-full gap-2 justify-center transition-all delay-150 text-blue-700 bg-blue-100 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
           >
             <svg
               aria-hidden="true"
               class={
                 isLoading
-                  ? "mr-5 w-8 h-5  text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                  ? "mr-1 w-5 h-5  text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                   : "hidden"
               }
               viewBox="0 0 100 101"
@@ -221,9 +222,9 @@ export default class RegisterDetails extends Component {
           </button>
           <p className="text-sm font-light text-gray-500 ">
             Already have an account?{" "}
-            <a href="/" className="font-medium text-blue-700 hover:underline ">
+            <Link to="/signin" className="font-medium text-blue-700 hover:underline ">
               Login here
-            </a>
+            </Link>
           </p>
         </div>
       </div>
