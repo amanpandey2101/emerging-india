@@ -17,10 +17,6 @@ import Arts from "./Components/Arts/Arts";
 import Paintings from "./Components/Arts/Paintings";
 import Music from "./Components/Arts/Music";
 import FiveG from './Components/Technology/FiveG';
-import Web3 from './Components/Technology/Web3';
-import AI from './Components/Technology/AI';
-import Cloud from './Components/Technology/Cloud';
-
 
 function App() {
 
@@ -28,12 +24,8 @@ function App() {
     <div className= "App">
       <Navbar/>
       <Routes>
-         <Route path='/signin' element={<Login/>}></Route>
-
-        {/* <Route path='/signin' element={<Login2/>}></Route> */}
-
+        <Route path='/signin' element={<Login/>}></Route>
         <Route path='/register' element={<Signup/>}></Route>
-        <Route path='/' element={<Slider/> }></Route>
         <Route path='/home' element={<Slider/> }></Route>
         <Route path='/heritage' element={<Heritage/>}></Route>
         <Route path='/infras' element={<Infrastructure/>}></Route>
@@ -43,9 +35,6 @@ function App() {
         <Route path='/paintings' element={<Paintings/>}></Route>
         <Route path='/music' element={<Music/>}></Route>
         <Route path='/fiveG' element={<FiveG/>}></Route>
-        <Route path='/web' element={<Web3/>}></Route>
-        <Route path='/ai' element={<AI/>}></Route>
-        <Route path='/cloud' element={<Cloud/>}></Route>
       </Routes>
       <Home />
     </div>

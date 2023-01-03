@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 
 const firSchema = new mongoose.Schema({
+
     informerName:{type:String,required:true},
     identityProof:[
         {
@@ -10,14 +11,18 @@ const firSchema = new mongoose.Schema({
         }
     ],
     address:{type:String,required:true},
+    pictures:[{img:{typr:String}}],
     firDetails:[{
-        info:{type:String},
+        subject:{type:String},
         location:{type:String},
-        images:{type:String},
-        against:{type:String}
+        time:{type:String},
+        date:{type:String},
+        against:{type:String},
+        witness:{type:String},
+        personsEvolved:{type:String},
+        message:{type:String},
     }]
 },{timestamps:true});
-
 
 
 module.exports = mongoose.model('FIR',firSchema);

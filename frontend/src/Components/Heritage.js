@@ -1,20 +1,14 @@
 import React from 'react'
 import Heritageslider from './Heritageslider'
-import Aos from 'aos';
-import "aos/dist/aos.css";
-import { useEffect } from 'react';
 
 export default function Heritage() {
-	useEffect(()=>{
-		Aos.init({duration:500});
-	},[])
 	
   return (
     <div className=' m-auto pt-20 '>
-        <h1 className=' font-bold text-6xl ' data-aos="fade-left">Best Heritages Sites to Visit in India</h1>
+        <h1 className=' font-bold text-6xl '>Best Heritages Sites to Visit in India</h1>
       <section className="dark:bg-gray-800 dark:text-gray-100 ">
 	<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-		<a href="https://en.wikipedia.org/wiki/Mahabodhi_Temple" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900  shadow-2xl rounded-md" data-aos="zoom-in">
+		<a href="https://en.wikipedia.org/wiki/Mahabodhi_Temple" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900  shadow-2xl rounded-md">
 			<img src={require("../assets/images/mahabodhi.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500 " />
 			<div className="p-6 space-y-4 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline ">Mahabodhi Temple, Bihar</h3>
@@ -22,7 +16,7 @@ export default function Heritage() {
 				<p className=''>The Mahabodhi Temple (literally: "Great Awakening Temple") or the Mahābodhi Mahāvihāra, a UNESCO World Heritage Site, is an ancient, but rebuilt and restored Buddhist temple in Bodh Gaya, Bihar, India, marking the location where the Buddha is said to have attained enlightenment.[1] Bodh Gaya is 15 km from Gaya and is about 96 km (60 mi) from Patna..</p>
 			</div>
 		</a>
-		<a  href="https://www.britannica.com/place/Ajanta-Caves" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a  href="https://www.britannica.com/place/Ajanta-Caves" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Ajanta Caves,Maharastra</h3>
 				<span className="text-xs dark:text-gray-400">December 14, 2022</span>
@@ -30,7 +24,7 @@ export default function Heritage() {
 			</div>
 			<img src={require("../assets/images/ajanta.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 		</a>
-		<a  href="https://en.wikipedia.org/wiki/Ellora_Caves" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a  href="https://en.wikipedia.org/wiki/Ellora_Caves" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<img src={require("../assets/images/ellora.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Ellora Caves,Maharastra</h3>
@@ -38,7 +32,7 @@ export default function Heritage() {
 				<p>Ellora is a UNESCO World Heritage Site located in the Aurangabad district of Maharashtra, India. It is one of the largest rock-cut Hindu temple cave complexes in the world, with artwork dating from the period 600–1000 CE.Cave 16 features the largest single monolithic rock excavation in the world, the Kailash temple, a chariot-shaped monument dedicated to the god Shiva. The Kailash temple excavation also features sculptures depicting various Hindu deities as well as relief panels summarizing the two major Hindu epics.</p>
 			</div>
 		</a>
-		<a  href="https://en.wikipedia.org/wiki/Agra_Fort" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a  href="https://en.wikipedia.org/wiki/Agra_Fort" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Agra Fort,Agra</h3>
 				<span className="text-xs dark:text-gray-400">December 14, 2022</span>
@@ -46,7 +40,7 @@ export default function Heritage() {
 			</div>
 			<img src={require("../assets/images/ajanta.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 		</a>
-		<a  href="https://en.wikipedia.org/wiki/Konark_Sun_Temple" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a  href="https://en.wikipedia.org/wiki/Konark_Sun_Temple" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<img src={require("../assets/images/konark.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Konark Sun Temple,Odisha</h3>
@@ -54,7 +48,7 @@ export default function Heritage() {
 				<p>Konark Sun Temple is a 13th-century CE (year 1250) Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India.The temple is attributed to king Narasimhadeva I of the Eastern Ganga dynasty about 1250 CE.Dedicated to the Hindu Sun God Surya, what remains of the temple complex has the appearance of a 100-foot (30 m) high chariot with immense wheels and horses, all carved from stone. Once over 200 feet (61 m) high,much of the temple is now in ruins, in particular the large shikara tower over the sanctuary; at one time this rose much higher than the mandapa that remains... </p>
 			</div>
 		</a>
-		<a href="https://en.wikipedia.org/wiki/Kaziranga_National_Park" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a href="https://en.wikipedia.org/wiki/Kaziranga_National_Park" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Kaziranga National Park,Assam</h3>
 				<span className="text-xs dark:text-gray-400">December 14, 2022</span>
@@ -62,7 +56,7 @@ export default function Heritage() {
 			</div>
 			<img src={require("../assets/images/kaziranga.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 		</a>
-		<a href="https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a href="https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<img src={require("../assets/images/Khajuraho.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Khajuraho Group of Monuments, Madhya Pradesh</h3>
@@ -70,7 +64,7 @@ export default function Heritage() {
 				<p>The Khajuraho Group of Monuments are a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh, India, about 175 kilometres southeast of Jhansi. They are a UNESCO World Heritage Site.The temples are famous for their nagara-style architectural symbolism and a few erotic sculptures.Most Khajuraho temples were built between 885 AD and 1000 AD by the Chandela dynasty.Historical records note that the Khajuraho temple site had 85 temples by the 12th century, spread over 20 square kilometers. Of these, only about 25 temples have survived, spread over six square kilometers...</p>
 			</div>
 		</a>
-		<a href="https://en.wikipedia.org/wiki/Elephanta_Caves" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a href="https://en.wikipedia.org/wiki/Elephanta_Caves" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Elephanta Caves, Maharastra</h3>
 				<span className="text-xs dark:text-gray-400">December 14, 2022</span>
@@ -78,7 +72,7 @@ export default function Heritage() {
 			</div>
 			<img src={require("../assets/images/elephanta.png")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 		</a>
-		<a href="https://whc.unesco.org/en/list/252/" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl" data-aos="zoom-in">
+		<a href="https://whc.unesco.org/en/list/252/" target={"_blank"} rel="noopener noreferrer" className="block max-w-sm gap-3 mx-auto sm:max-w-full max-[1024px]:flex max-[1024px]:flex-col-reverse group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900 shadow-2xl">
 			<img src={require("../assets/images/taj-mahal.jpg")} alt="" className="object-cover w-full h-68 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">The Taj Mahal, Agra</h3>

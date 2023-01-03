@@ -5,7 +5,7 @@ export default function Infrastructure() {
     <>
     <div>
       <div class="aspect-w-16 aspect-h-9 ">
-  <iframe className='' src={require('https://drive.google.com/file/d/1964ecIRGLGPoOWX-cNPpJEpjCXmgTpKG/view')} width="640" height="380" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title='video'></iframe>
+  <iframe className='' src={require('../assets/images/emerging-india.mp4')} width="640" height="380" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title='video'></iframe>
         </div>
     </div>
 

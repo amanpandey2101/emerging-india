@@ -47,6 +47,20 @@ const userSchema = mongoose.Schema({
         type:Number,
         required:true
     },
+    profileCompleted:{
+        type:String,
+        required:true
+    },
+    address:[
+        {
+                zip:{type:String},
+                ps:{type:String},
+                landmark:{type:String},
+                state:{type:String},
+                district:{type:String},
+                line1:{type:String}
+        }
+    ],
     profilePicture:{type:String},
 
 }, {timestamps:true})
