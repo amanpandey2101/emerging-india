@@ -44,7 +44,7 @@ export default function Navbar() {
             </li>
             <li className="nav-mem relative group cursor-pointer">
               <i className="fa-solid fa-info"></i>
-              About
+              <Link to='/about'>About</Link>
             </li>
             <li className="nav-mem relative group cursor-pointer">
               <i className="fa-brands fa-envira"></i>
