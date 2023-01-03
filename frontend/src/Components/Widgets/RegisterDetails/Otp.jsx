@@ -22,7 +22,7 @@ export const Otp = ({
       })
       .catch((error) => {
         if (error) {
-          alert("Inavalid Code")
+          console.log(error.message);
         }
       });
   }
@@ -44,10 +44,10 @@ export const Otp = ({
     });
     api.post("", user).then((res) => {
       console.log(res.data.message);
-      if(res.data.code == 1){
+      if(res.data.message == 1){
         next();
       } else {
-        alert(res.data.message)
+        
       }
     });
   }
@@ -77,11 +77,10 @@ export const Otp = ({
           type="submi"
           disabled={false}
           onClick={verifyCode}
-          className="flex w-auto gap-2 justify-center transition-all delay-150 text-blue-700 bg-blue-100 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+          className="flex w-full gap-2 justify-center transition-all delay-150 text-blue-700 bg-blue-100 hover:bg-primary-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
         >
           <p className="">Verify</p>
         </button>
-        
       </div>
     </div>
   );
