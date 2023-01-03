@@ -22,7 +22,7 @@ export default function Navbar() {
     <>
       <div
         className={
-          scroll? "  navbar-scrolled p-3  z-10 delay-50" : "  navbar z-10 "
+          scroll? "  navbar-scrolled p-3  z-30 delay-50" : "  navbar z-30 "
         
         }
       >
@@ -55,7 +55,7 @@ export default function Navbar() {
             <i className="fa-solid fa-caret-down relative left-4"></i>
             <button className="menubutton mr-6  p-6">Options</button>
             
-          <div className="dropdownmenu z-10 top-16 right-16   p-4 rounded-md ">
+          <div className="dropdownmenu z-30 top-16 right-16   p-4 rounded-md ">
            <Link to='/dashboard' className="hover:bg-white rounded-md p-3" >Dashboard</Link>
            <a className="hover:bg-white rounded-md p-3" href="/">About us</a>
            <a className="hover:bg-white rounded-md p-3" href="/">Contact us</a>
@@ -63,7 +63,7 @@ export default function Navbar() {
           </div>                         
           </div>
 
-            <div className="dropdown dropdown-end profile-icon pt-2">
+            <div className="dropdown dropdown-end profile-icon pt-4">
               <label tabIndex={0} className="">
                 <img
                   className="h-8 w-8 rounded-full"

@@ -4,49 +4,45 @@ const jwt = require("jsonwebtoken");
 exports.signup = (req, res) => {
   User.findOne({ email: req.body.email }).exec((error, user) => {
     if (user) {
-      res.status(201).json({ message: "User Already Exist", code: 0 });
-    } else {
-      const { firstName, lastName, email, password, contactNumber } = req.body;
-      const _user = new User({
-        firstName,
-        lastName,
-        email,
-        password,
-        contactNumber,
-        userName: Math.random().toString(),
-        profileCompleted:0
-      });
-      _user.save((error, data) => {
-        if (error) {
-          console.log(error);
-          res
-            .status(201)
-            .json({ message: "Please Contact Administrator", code: 0 });
-        }
-        if (data) {
-          res
-            .status(201)
-            .json({ message: "User Registered Successfully", code: 1 });
-          console.log(data);
-        }
-      });
-    }
+      res.status(201).json({ message: "User Already Exist",
+    code:0 });
+      
+    } else{
+    const { firstName, lastName, email, password, contactNumber } = req.body;
+    const _user = new User({
+      firstName,
+      lastName,
+      email,
+      password,
+      contactNumber,
+      userName: Math.random().toString(),
+    });
+    _user.save((error, data) => {
+      if (error) {
+        console.log(error);
+        res.status(400).json({ error });
+        
+      }
+      if (data) {
+        res.status(201).json({ message:"User Registered Successfully",code:1 });
+        console.log(data);
+      }
+    });
+  }
   });
+
 };
 
 exports.signin = (req, res) => {
   User.findOne({ email: req.body.email }).exec((error, user) => {
-    if (error) {
+    if (error)
       res.status(400).json({ message: "Error occurred While Logging in" });
-      console.log(`First${error}`);
-    }
     if (user) {
       if (user.authenticate(req.body.password)) {
         const token = jwt.sign(
           {
             _id: user._id,
             role: user.role,
-            email: user.email,
             fullName: `${user.firstName} ${user.lastName}`,
           },
           process.env.JWT_SECRET,
@@ -55,7 +51,6 @@ exports.signin = (req, res) => {
           }
         );
         const { _id, firstName, lastName, email, role, fullName } = user;
-        console.log(user);
         res.status(200).json({
           token,
           user: {
@@ -68,18 +63,10 @@ exports.signin = (req, res) => {
           },
         });
       } else {
-        console.log("Incorrect Credentials");
         return res
           .status(400)
-          .json({ message: "Incorrect Credentials" });
+          .json({ message: "Username or Password Incorrect" });
       }
-    } else{
-      return res 
-      .status(400)
-      .json({message:"User Not Registered"})
     }
   });
 };
-
-
-

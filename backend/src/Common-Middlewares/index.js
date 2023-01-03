@@ -17,7 +17,3 @@ exports.userMiddleware = (req,res,next)=>{
     }
     next();
   } 
-
-  exports.adminMiddleware = (req,res,next)=>{
-    
-  }

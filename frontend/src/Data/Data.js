@@ -24,7 +24,7 @@ import {
       },
       {
         icon: UilUsersAlt,
-        heading: "Profile",
+        heading: "Customers",
       },
       {
         icon: UilPackage,

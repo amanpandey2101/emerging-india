@@ -1,6 +1,8 @@
 const Fir =  require('../Models/fir')
 
 
+
+
 exports.logFir = (req,res)=>{
     const {identityProof,address,firDetails} = req.body
     const _fir = new Fir(
