@@ -1,13 +1,6 @@
 import React from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
-import { Link } from 'react-router-dom'
 
 export default function Technology() {
-    useEffect(()=>{
-        AOS.init({duration:500})
-    },[])
   return (
    <>
   <div className="technology">
@@ -57,13 +50,13 @@ export default function Technology() {
 
         
     </div>
-<section className="py-6 dark:bg-gray-800 relative " data-aos="zoom-in">
-                <div className="container flex justify-center p-4 mx-auto">
-                    <div className="grid grid-cols-1 gap-10 mx-8 lg:grid-cols-2 sm:grid-cols-2">
+<section className="py-6 dark:bg-gray-800 relative max-[500px]:left-12">
+                <div className="container flex flex-col justify-center p-4 mx-auto">
+                    <div className="grid grid-cols-1 gap-10 mx-8 lg:grid-cols-3 sm:grid-cols-2">
                         <div>
-                            <a href="/web">
+                            <a href="/heritage">
                                 <img
-                                    className=" object-fill w-fit cursor-pointer hover:animate-pulse aspect-square h-[40vh] rounded-xl" style={{ boxShadow: "2px 2px 15px black" }}
+                                    className="object-cover w-fit cursor-pointer hover:animate-pulse aspect-square h-[40vh] rounded-xl" style={{ boxShadow: "2px 2px 15px black" }}
 
                                     src={require("../assets/images/web3.webp")}
                                     alt=""/>
@@ -71,24 +64,24 @@ export default function Technology() {
                             </a>
                         </div>
                         <div>
-                            <a href='/FiveG'>
+                            <a href='/arts'>
                                 <img
-                                    className="object-fill w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
+                                    className="object-cover w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
                                     src={require("../assets/images/5Gindia.jpg")}
                                     alt="" />
                             </a>
                             
                         </div>
-                        {/* <div>
+                        <div>
                             <img
                                 className="object-cover w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
                                 src={require("../assets/images/metaverse.jpg")}
                                 alt=""
                             />
                             
-                        </div> */}
-                        {/* <div>
-                            <a href="/infras">
+                        </div>
+                        <div>
+                            <a href="infras">
                                 <img
                                     className="object-cover w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
                                     src={require("../assets/images/Edge-computing.jpg")}
@@ -96,22 +89,22 @@ export default function Technology() {
                                 />
                                 
                             </a>
-                        </div> */}
+                        </div>
                         <div>
-                            <a href="/cloud">
+                            <a href="infras">
                                 <img
-                                    className="object-fill w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
+                                    className="object-cover w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
                                     src={require("../assets/images/cloud-computing-virtualization.jpeg")}
                                     alt=""/> 
                             </a>
                         </div>
                         <div>
-                            <Link to="/ai">
+                            <a href="infras">
                                 <img
-                                    className="object-fill w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
+                                    className="object-cover w-fit cursor-pointer hover:animate-pulse dark:bg-gray-500 aspect-square h-[40vh] rounded-2xl" style={{ boxShadow: "2px 2px 15px black" }}
                                     src={require("../assets/images/ai.jpg")}
                                     alt=""/> 
-                            </Link>
+                            </a>
                         </div>
                         
                         

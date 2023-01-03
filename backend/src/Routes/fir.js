@@ -8,4 +8,4 @@ router.post("/fir/log",requireSignin,userMiddleware,logFir);
 
 
 
-module.exports = router;
+module.exports = router;z
